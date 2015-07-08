@@ -15,9 +15,9 @@ if ($json_array['stream'] != NULL) {
     $streamTitle = $json_array['stream']['channel']['status'];
     $currentGame = $json_array['stream']['channel']['game'];
  
-    mysqli_query($con,"UPDATE streams SET Online=1 WHERE streamname='scglive'");
+    mysqli_query($con,"UPDATE Streams SET Online=1 WHERE streamname='scglive'");
 } else {
-    mysqli_query($con,"UPDATE streams SET Online=0 WHERE streamname='scglive'");
+    mysqli_query($con,"UPDATE Streams SET Online=0 WHERE streamname='scglive'");
 }
 
 $channelName = 'magic';
@@ -30,9 +30,9 @@ if ($json_array['stream'] != NULL) {
     $streamTitle = $json_array['stream']['channel']['status'];
     $currentGame = $json_array['stream']['channel']['game'];
  
-    mysqli_query($con,"UPDATE streams SET Online=1 WHERE streamname='magic'");
+    mysqli_query($con,"UPDATE Streams SET Online=1 WHERE streamname='magic'");
 } else {
-    mysqli_query($con,"UPDATE streams SET Online=0 WHERE streamname='magic'");
+    mysqli_query($con,"UPDATE Streams SET Online=0 WHERE streamname='magic'");
 }
 
 $channelName = 'magic2';
@@ -45,9 +45,9 @@ if ($json_array['stream'] != NULL) {
     $streamTitle = $json_array['stream']['channel']['status'];
     $currentGame = $json_array['stream']['channel']['game'];
  
-    mysqli_query($con,"UPDATE streams SET Online=1 WHERE streamname='magic2'");
+    mysqli_query($con,"UPDATE Streams SET Online=1 WHERE streamname='magic2'");
 } else {
-    mysqli_query($con,"UPDATE streams SET Online=0 WHERE streamname='magic2'");
+    mysqli_query($con,"UPDATE Streams SET Online=0 WHERE streamname='magic2'");
 }
 
 $channelName = 'channelfireball';
@@ -60,9 +60,9 @@ if ($json_array['stream'] != NULL) {
     $streamTitle = $json_array['stream']['channel']['status'];
     $currentGame = $json_array['stream']['channel']['game'];
  
-    mysqli_query($con,"UPDATE streams SET Online=1 WHERE streamname='channelfireball'");
+    mysqli_query($con,"UPDATE Streams SET Online=1 WHERE streamname='channelfireball'");
 } else {
-    mysqli_query($con,"UPDATE streams SET Online=0 WHERE streamname='channelfireball'");
+    mysqli_query($con,"UPDATE Streams SET Online=0 WHERE streamname='channelfireball'");
 }
 
 $channelName = 'tcgplayer';
@@ -75,9 +75,9 @@ if ($json_array['stream'] != NULL) {
     $streamTitle = $json_array['stream']['channel']['status'];
     $currentGame = $json_array['stream']['channel']['game'];
  
-    mysqli_query($con,"UPDATE streams SET Online=1 WHERE streamname='tcgplayer'");
+    mysqli_query($con,"UPDATE Streams SET Online=1 WHERE streamname='tcgplayer'");
 } else {
-    mysqli_query($con,"UPDATE streams SET Online=0 WHERE streamname='tcgplayer'");
+    mysqli_query($con,"UPDATE Streams SET Online=0 WHERE streamname='tcgplayer'");
 }
 
 
